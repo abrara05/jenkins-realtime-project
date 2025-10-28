@@ -12,7 +12,7 @@ pipeline {
     }
     stage('checkout from SCM'){
       steps{
-        git branch: 'main' , credentialId: 'github' , url: 'https://github.com/abrara05/jenkins-realtime-project'
+        git branch: 'main' , credentialsId: 'github' , url: 'https://github.com/abrara05/jenkins-realtime-project'
       }
     }
     stage('Build Application'){
